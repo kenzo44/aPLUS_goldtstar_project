@@ -18,44 +18,31 @@
 <body>
   <!-- shatter -->
   <div id="container" onclick="playAudio('./assets/shatter-star.mp3')"></div>
+  <div class="logo">
+    <a href="/"><img src="assets/imgs/main_logo.png" class="logo-img" alt="Earthy Treats" /></a>
+  </div>
 
-  <header class="header">
-    <div class="logo">
-      <a href="/"><img src="assets/imgs/main_logo.png" class="logo-img" alt="Agralinks logo" /></a>
-    </div>
-    <nav class="nav" role="navigation">
-      <ul class="nav-links">
-        <li><a href="#">Why Agralinks?</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Sign in</a></li>
-        <li>
-          <a class="button button_login hvr-icon-forward" href="#">Join <i class="fas fa-tractor hvr-icon"></i></a>
-        </li>
-      </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
-  </header>
+
   <!-- Main content -->
   <main class="main">
-    <section class="section_hero">
-      <div class="container">
-        <p class="welcome_heading">
-          Get Answers<br />you need<br />
-          #OnFarm <br />
-          <a class="button button_action hvr-icon-forward" href="#">Get Started <i
-              class="fas fa-tractor hvr-icon"></i></a>
-        </p>
+
+    <div id="fullScreenDiv">
+      <div id="videoDiv">
+        <video preload="preload" id="video" autoplay="autoplay" loop="loop" muted>
+          <source src="./assets/hero-video-cutter.mp4" type="video/mp4">
+          </source>
+        </video>
       </div>
-    </section>
+      <div id="messageBox">
+        <div>
+          <h1>No Other Animal Does This</h1>
+        </div>
+      </div>
+    </div>
+
 
     <section class="section section_showcase">
-      <p class="secondary_heading"><i class="fas fa-search"></i> Find the <u>right</u> Advisor: <span id="typed"></span>
+      <p class="secondary_heading"><i class="fas fa-search"></i> An <u>Avoidable</u> Food Crisis: <span id="typed"></span>
       </p>
       <div id="typed-strings">
         <p>Instant access to <strong>Veterinarians</strong></p>
@@ -87,7 +74,7 @@
     </section>
 
     <section class="section section_info">
-      <p class="secondary_heading"><i class="fas fa-hammer"></i> How it <u>works</u>?</p>
+      <p class="secondary_heading"><i class="fas fa-hammer"></i> An <u>Avoidable</u>Food Crisis</p>
       <!-- Look up Advisor -->
       <div class="info_cards">
         <div class="card">
@@ -163,15 +150,7 @@
   <footer class="flex-rw">
     <section class="footer-social-section flex-rw">
       <span class="footer-social-overlap footer-social-connect">
-        CONNECT <span class="footer-social-small">with</span> US
-      </span>
-      <span class="footer-social-overlap footer-social-icons-wrapper">
-        <a href="#" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i
-            class="fab fa-facebook"></i></a>
-        <a href="#" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i
-            class="fab fa-instagram"></i></a>
-        <a href="#" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i
-            class="fab fa-twitter"></i></a>
+        Reduce Reuse Recycle
       </span>
     </section>
     <section class="footer-bottom-section flex-rw">
@@ -179,42 +158,30 @@
         <i class="fa fa-copyright" role="copyright">
 
         </i>
-        <script>document.write(new Date().getFullYear())</script>, Agralinks, LTD.<span class="footer-bottom-rights"> -
+        <script>document.write(new Date().getFullYear())</script>, Kenish Suri<span class="footer-bottom-rights"> -
           All Rights Reserved -
         </span>
       </div>
-      <div class="footer-bottom-wrapper">
-        <a href="#" class="generic-anchor" rel="nofollow">Terms of Use</a> | <a href="#" class="generic-anchor"
-          rel="nofollow">Privacy Policy</a>
-      </div>
     </section>
-  </footer>
-
-  <div class="cui-embed" data-cui-uid="UzutVu" data-cui-avatar="https://images.typeform.com/images/AZN5uCRgNHzW"
-    data-cui-mode="pill" data-cui-pill-button-color="#009245"></div>
-  <script src="https://public-assets.typeform.com/confab/embed.js" async></script>
-  <script src="https://public-assets.typeform.com/confab/embed.js" async></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./assets/js/snowstorm.js"></script>
-  <script src="./assets/js/shatter.js"></script>
-  <script src="./assets/js/addons-shatter.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-  <script src="assets/js/function.js"></script>
-  <script>
-    var typed = new Typed("#typed", {
-      stringsElement: "#typed-strings",
-      smartBackspace: true,
-      typeSpeed: 60,
-      backSpeed: 40,
-      loop: true,
-      showCursor: true,
-      cursorChar: "|",
-      autoInsertCss: true,
-      contentType: 'html',
-    });
-  </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="snow" src="./assets/js/snowstorm.js"></script>
+    <script src="./assets/js/shatter.js"></script>
+    <script src="./assets/js/addons-shatter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+      var typed = new Typed("#typed", {
+        stringsElement: "#typed-strings",
+        smartBackspace: true,
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop: true,
+        showCursor: true,
+        cursorChar: "|",
+        autoInsertCss: true,
+        contentType: 'html',
+      });
+    </script>
 </body>
 
 </html>

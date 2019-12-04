@@ -24,7 +24,7 @@
 
       // images from kenishsuri.com
       var urls = [
-              "https://www.kenishsuri.com/nmed4520-gold/hero-shatter.png"
+              "https://www.kenishsuri.com/assets/imgs/hero-shatter.png"
           ],
           image,
           loaded = 0;
