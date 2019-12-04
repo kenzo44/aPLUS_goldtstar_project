@@ -19,6 +19,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  background-image: url(/assets/imgs/bg.svg);
+  background-repeat: no-repeat;
+  
 }
 
 .logo {
@@ -197,7 +200,7 @@ canvas {
 }
 
 .section_showcase {
-  min-height: 10rem;
+  min-height: 20rem;
 }
 
 .secondary_heading {
@@ -205,6 +208,7 @@ canvas {
 }
 
 .popTags_Area {
+  
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -269,10 +273,10 @@ canvas {
   width: 100%;
   text-align: center;
   position: relative;
-  min-height: 50rem;
+  min-height: 52rem;
   background-image: url("https://www.kenishsuri.com/assets/imgs/What-Is-Wasted-EN.png");
   background-repeat: no-repeat;
-  background-image: cover;
+  background-size: cover;
 }
 
 /* mobile */
