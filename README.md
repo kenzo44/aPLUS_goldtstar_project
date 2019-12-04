@@ -1,2 +1,2 @@
-# aPLUS_goldtstar_project
+# NMED4520 Final Project
 the title...
