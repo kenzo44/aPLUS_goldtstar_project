@@ -16,17 +16,12 @@
 </head>
 
 <body>
-
-  <div class="shatter-hand">
-    <h2>Comfort Food Essentials</h2>
-  </div>
-
-
-
+  <!-- shatter -->
+  <div id="container" onclick="playAudio('./assets/shatter-star.mp3')"></div>
 
   <header class="header">
     <div class="logo">
-      <a href="/"><img src="assets/imgs/main_logo.png" alt="Agralinks logo" /></a>
+      <a href="/"><img src="assets/imgs/main_logo.png" class="logo-img" alt="Agralinks logo" /></a>
     </div>
     <nav class="nav" role="navigation">
       <ul class="nav-links">
@@ -164,18 +159,6 @@
       </div>
     </section>
 
-    <section class="section section_blog">
-      <p class="secondary_heading"></i><i class="fas fa-pencil-alt"></i> From our <u>Blog</u></p>
-      <div class="vid-contain">
-        <div class="vid-bg">
-          <video id="video-content" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-            <source src="./assets/vid/blog-hero.mp4" type="video/mp4" />
-            Sorry, your browser does not support HTML5 video.
-          </video>
-        </div>
-      </div>
-
-    </section>
   </main>
   <footer class="flex-rw">
     <section class="footer-social-section flex-rw">
@@ -212,7 +195,11 @@
   <script src="https://public-assets.typeform.com/confab/embed.js" async></script>
   <script src="https://public-assets.typeform.com/confab/embed.js" async></script>
 
-  <script type="text/javascript" src="./assets/js/jquery-3.4.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./assets/js/snowstorm.js"></script>
+  <script src="./assets/js/shatter.js"></script>
+  <script src="./assets/js/addons-shatter.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   <script src="assets/js/function.js"></script>
   <script>
